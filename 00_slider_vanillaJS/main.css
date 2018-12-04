@@ -1,0 +1,10 @@
+/* reset START */
+html,
+body {margin: 0; height: 100%;}
+img {vertical-align: top; width: 100%;}
+/* reset END */
+
+.project_title {position: fixed; left:50%; top:0; transform: translateX(-50%);}
+.main-slider {max-width:1200px; height: 100%; margin: 0 auto;  position: relative;}
+.slider {opacity: 0; position: absolute; left:0; top:50%; transform: scale(0.9) translateY(-50%); transition: all 0.1s;}
+.slider.on {opacity : 1; transform: scale(1) translateY(-50%);}
