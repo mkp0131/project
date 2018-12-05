@@ -1,0 +1,14 @@
+/* reset START */
+html,
+body {margin: 0; height: 100%;}
+img {vertical-align: top; width: 100%;}
+/* reset END */
+
+body {display:flex; align-items: center;}
+.project-title {position: fixed; left:50%; top:0; transform: translateX(-50%);}
+.main-slider {transition: all 0.5s ease;} 
+.slider-dots {position: absolute; bottom:70px; left:50%; transform: translateX(-50%);}
+.slider-dots .dot { width:15px; height: 15px; border-radius: 50%; background :#dbdbdb; float: left; margin: 0 5px;}
+.slider-dots .dot.on {background: #ffbb00;}
+/* .slider {float: left;}  */
+/* .slider.on {opacity : 1; transform: scale(	1) translateY(-50%);} */
