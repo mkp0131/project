@@ -22,10 +22,10 @@ for (let i = 0; i < sldierElements.length; i++) {
 let moveSlider = 0;
 let sliderIndex = 0;
 const dots = document.querySelector('.slider-dots').querySelectorAll('.dot');
+dots[0].classList.add('on');
 
 setInterval(() => {
 	moveSlider += width;
-
 	if ( moveSlider < sliderWidth ) {
 		sliderIndex = moveSlider/width;
 		mainSlider.style.transform = `translateX(-${moveSlider}px)`;
@@ -33,19 +33,27 @@ setInterval(() => {
 		moveSlider = 0;
 		sliderIndex = moveSlider/width;
 		mainSlider.style.transform = `translateX(-${moveSlider}px)`;
-	
 	}
 
 	for (let i = 0; i < sldierElements.length; i++) {
 		if ( sliderIndex === i ) {
+			if ( dots[i].previousElementSibling === null ) {
+				dots[sldierElements.length-1].classList.remove('on'); 
+				dots[0].classList.add('on');
+				return;
+			} 
 			dots[i].previousElementSibling.classList.remove('on');
 			dots[i].classList.add('on');
-			if ( sliderIndex > i ) {
-				console.log(1);
-			}
+			return;
 		}
-		
 	}
 }, 1000);
 
+// slider arrow test 2018-12-06
+const sliderArrows = document.querySelector('.slider-arrow');
+let ttt = function () { console.log(moveSlider); }
+sliderArrows.querySelector('.btn-previous').addEventListener('click', function () { 
+	moveSlider -= width;
+	// console.log(moveSlider); 
+});
 
