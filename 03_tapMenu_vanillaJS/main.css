@@ -1,0 +1,19 @@
+/* reset START */
+html,
+body {margin: 0; height: 100%;}
+img {vertical-align: top; width: 100%;}
+ul {list-style: none; padding: 0;}
+.row {width: 1200px;}
+.clear {display: block; clear: both;}
+/* reset END */
+
+body {display:flex; align-items: center; justify-content: center;}
+.project-title {position: fixed; left:50%; top:0; transform: translateX(-50%);}
+
+.tap-menu ul>li {float: left; border: 1px solid #212121; width: 25%; box-sizing: border-box; border-left: 0; padding: 15px 0; text-align: center; color: #212121; cursor: pointer;}
+.tap-menu ul>li:first-child {border-left: 1px solid #212121;}
+.tap-menu ul>li:hover {background: #212121; color: #fff; font-weight: 700;}
+.tap-menu ul>li.on {background: #212121; color: #fff; font-weight: 700;}
+.tap-contents div { background: #dbdbdb; display: none; text-align: center; padding: 100px 0;}
+.tap-contents div h4 {font-size: 62px; margin: 0;}
+.tap-contents div.on {display: block;}
