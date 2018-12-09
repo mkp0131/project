@@ -15,4 +15,4 @@ body {display:flex; align-items: center; justify-content: center;}
 .watch-board {text-align:center; width: 100%; background: #070d59; color: #fff; padding: 50px 0;}
 .watch-board .today {font-size: 32px; font-weight: 700;}
 .watch-board .time {font-size: 102px; font-weight: 700;}
-.watch-board .time span {width: 120px; display: inline-block;}
+/* .watch-board .time span {width: 120px; display: inline-block;} */
