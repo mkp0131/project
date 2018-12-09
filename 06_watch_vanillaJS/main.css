@@ -1,0 +1,18 @@
+/* reset START */
+html,
+body {margin: 0; height: 100%; font-family: 'Roboto', sans-serif;}
+img {vertical-align: top; width: 100%;}
+ul {list-style: none; padding: 0;}
+.row {width: 1200px;}
+.clear {display: block; clear: both;}
+/* reset END */
+
+/* project default setting START */
+body {display:flex; align-items: center; justify-content: center;}
+.project-title {position: fixed; left:50%; top:0; transform: translateX(-50%);}
+/* project default setting END */
+
+.watch-board {text-align:center; width: 100%; background: #070d59; color: #fff; padding: 50px 0;}
+.watch-board .today {font-size: 32px; font-weight: 700;}
+.watch-board .time {font-size: 102px; font-weight: 700;}
+.watch-board .time span {width: 120px; display: inline-block;}
