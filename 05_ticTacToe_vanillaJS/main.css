@@ -1,0 +1,19 @@
+/* reset START */
+html,
+body {margin: 0; height: 100%;}
+img {vertical-align: top; width: 100%;}
+ul {list-style: none; padding: 0;}
+.row {width: 1200px;}
+.clear {display: block; clear: both;}
+/* reset END */
+
+/* project default setting START */
+body {display:flex; align-items: center; justify-content: center;}
+.project-title {position: fixed; left:50%; top:0; transform: translateX(-50%);}
+/* project default setting END */
+
+.game-board {margin:0 auto; box-sizing: border-box; border:3px solid #999; width: 600px; height: 600px; }
+.game-board>div {background: #dbdbdb; font-size: 92px; position: relative; cursor: pointer; float: left; width: 33.3333%; height: 33.3333%; display: flex; justify-content: center; align-items: center;}
+.game-board>div:nth-child(2n) {background: #fff;}
+.game-board>div:hover {background: #666; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+.player-info {position: absolute; right: 10px; top:10px; font-size: 42px; font-weight: 700;}
