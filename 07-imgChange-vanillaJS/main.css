@@ -1,0 +1,15 @@
+/* reset START */
+html,
+body {margin: 0; height: 100%; font-family: 'Roboto', sans-serif;}
+img {vertical-align: top; width: 100%;}
+ul {list-style: none; padding: 0; margin: 0;}
+.row {width: 1200px;}
+.clear {display: block; clear: both;}
+/* reset END */
+
+/* project default setting START */
+body {display:flex; justify-content: center; align-items: center;}
+.project-title {position: fixed; left:50%; top:0; transform: translateX(-50%); color:#212121;}
+/* project default setting END */
+
+.img-list {width: 500px;}
