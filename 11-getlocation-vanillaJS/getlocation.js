@@ -8,7 +8,6 @@ navigator.geolocation.getCurrentPosition(function(position) {
 	const getWeather = fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&APPID=cb5246d6b85c278a24795a03b2fec637&units=metric`).then(function(res) {
 		return res.json();
 	}).then(function(json) {
-		console.log(json);
 		const weatherStatus = json.weather[0].main;
 		const weatherDescription = json.weather[0].description;
 		const weatherTemp = json.main.temp;
@@ -16,7 +15,6 @@ navigator.geolocation.getCurrentPosition(function(position) {
 		h2Element.innerText= weatherDescription;
 		pElement.innerText = weatherTemp + "℃";
 	});
-
 });
 
 
